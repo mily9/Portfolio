@@ -263,9 +263,8 @@ body.light-theme{
   border-radius: 4rem; 
   padding: 1rem 2.25rem;
   backdrop-filter: blur(10px);  
-  margin-left: 25%;
+  margin-left: 15%;
   transition: .4s; /* for light mode animation */
-
 }
 
 .nav__list{
