@@ -1004,7 +1004,7 @@ overflow: hidden; */
 }
 
 /* For medium devices */
-@media only screen and (min-width: 750px) {
+@media only screen and (max-width: 750px) {
   .home__handle{
     margin-top: -2rem;
   }
@@ -1012,9 +1012,13 @@ overflow: hidden; */
 }
 
 /* For medium devices */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
   .home__social, .home__scroll{
     bottom: 14rem;
+  }
+
+  .skills__container{
+    left: -5rem;
   }
 
   .home__handle{
@@ -1027,9 +1031,18 @@ overflow: hidden; */
 }
 
 /* For large devices */
-@media only screen and (min-width: 400px) {
+@media only screen and (max-width: 400px) {
+  .container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
   .home__handle{
+    top: -10%;
     left: 25%;
+  }
+
+  .home__social, .home__scroll{
+    bottom: -20rem;
   }
 }
 
