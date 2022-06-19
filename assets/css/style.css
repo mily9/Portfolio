@@ -1018,11 +1018,7 @@ overflow: hidden; */
   }
 
   .home__handle{
-    left: 32%;
-  }
-
-  .about{
-    margin-top: -20%;
+    left: 25%;
   }
 
   .skills__container{
@@ -1031,11 +1027,9 @@ overflow: hidden; */
 }
 
 /* For large devices */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 400px) {
   .home__handle{
-    width: 250px;
-    height: 500px;
-    margin-right: 10%
+    left: 25%;
   }
 }
 
