@@ -157,7 +157,6 @@ body.light-theme{
 .light-theme .home__scroll,
 .light-theme .button,
 .light-theme .active-work{
-  box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
   color: var(--title-color);
 }
 
@@ -316,7 +315,7 @@ body.light-theme{
 .home__greeting{
   display: block;
   color: var(--title-color);
-  margin-bottom: .25rem;
+  margin-bottom: .10rem;
 }
 
 .home__education{
@@ -1005,22 +1004,38 @@ overflow: hidden; */
 }
 
 /* For medium devices */
-@media only screen and (min-width: 900px) {
-  .home__container{
-    padding-top: 0rem;
+@media only screen and (min-width: 750px) {
+  .home__handle{
+    margin-top: -2rem;
   }
   
 }
 
 /* For medium devices */
 @media only screen and (min-width: 600px) {
+  .home__social, .home__scroll{
+    bottom: 14rem;
+  }
+
+  .home__handle{
+    left: 32%;
+  }
+
+  .about{
+    margin-top: -20%;
+  }
+
   .skills__container{
-    margin-left: 10%;
+    left: -155%;
   }
 }
 
 /* For large devices */
 @media only screen and (min-width: 600px) {
-  
+  .home__handle{
+    width: 250px;
+    height: 500px;
+    margin-right: 10%
+  }
 }
 
