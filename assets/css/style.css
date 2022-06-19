@@ -984,17 +984,47 @@ overflow: hidden; */
     padding: 1rem 1.5rem; 
   }
 
+  .nav{
+    justify-content: space-around;
+  }
+
+  .theme-button{
+    right: 2%;
+  }
+
+  .container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .home__handle{
+    margin-left: 0rem;
+    margin-right: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
   .home__buttons{
     flex-direction: column;
   }
-  
-  .home__handle{
-    width: 150px;
-    height: 253px;
+
+  .home__social, .home__scroll{
+    bottom: 2rem;
   }
 
+  .about__data{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .about__info{
+
+  }
+  
+
+
   .home__img{
-    width: 130px;
+    width: 60%;
   }
 
   .about__info{
@@ -1004,17 +1034,23 @@ overflow: hidden; */
 }
 
 /* For medium devices */
-@media only screen and (max-width: 750px) {
-  .home__handle{
-    margin-top: -2rem;
+/* @media only screen and (max-width: 1024px) {
+  .home__social, .home__scroll{
+    bottom: 50rem;
   }
   
-}
+} */
+
+
 
 /* For medium devices */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 820px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
   .home__social, .home__scroll{
-    bottom: 14rem;
+    bottom: 2rem;
   }
 
   .skills__container{
@@ -1028,10 +1064,10 @@ overflow: hidden; */
   .skills__container{
     left: -155%;
   }
-}
+} */
 
 /* For large devices */
-@media only screen and (max-width: 400px) {
+/* @media only screen and (max-width: 450px) {
   .container {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -1042,7 +1078,7 @@ overflow: hidden; */
   }
 
   .home__social, .home__scroll{
-    bottom: -20rem;
+    bottom: 0rem;
   }
-}
+} */
 
