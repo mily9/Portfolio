@@ -436,7 +436,6 @@ body.light-theme{
 
 
 .about__info{
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
@@ -850,7 +849,7 @@ body.light-theme{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   justify-content: center;
-  column-gap: 1.2rem;
+  column-gap: .5rem;
   margin-bottom: 2rem;
 }
 
@@ -976,6 +975,18 @@ body.light-theme{
     right: 2%;
   }
 
+  .services__container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .services__card_left{
+    margin-right: 0%;
+  }
+  
+  .services__card_right{
+    margin-left: 00%;
+  }
+
   .container {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -1002,6 +1013,10 @@ body.light-theme{
 
   .home__img{
     width: 60%;
+  }
+
+  .home__container{
+    margin-left: 0;
   }
 
   .about__info{
