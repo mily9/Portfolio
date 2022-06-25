@@ -847,7 +847,8 @@ body.light-theme{
 }
 
 .footer__list{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   justify-content: center;
   column-gap: 1.2rem;
   margin-bottom: 2rem;
@@ -980,6 +981,10 @@ body.light-theme{
     margin-right: 1.5rem;
   }
 
+  .contact__container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .home__handle{
     margin-left: 0rem;
     margin-right: 1rem;
@@ -1008,9 +1013,12 @@ body.light-theme{
   }
 
   .skills__container{
-    
     margin: 0;
+  }
 
+  .footer__list{
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
   }
 }
 
