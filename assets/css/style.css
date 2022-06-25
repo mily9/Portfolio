@@ -914,6 +914,7 @@ body.light-theme{
 
   .skills__group{
     grid-template-columns: repeat(2, 1fr);
+    padding-left: 15%;
   }
 
   .services__container{
@@ -936,9 +937,15 @@ body.light-theme{
 
 /* For small devices */
 @media screen and (max-width: 450px){
-
+  .section{
+    margin-top: 2%;
+  }
   .home__img{
     border-radius: 12rem;
+  }
+
+  .about__description{
+    text-align: left;
   }
 
   .about__description{
@@ -951,54 +958,5 @@ body.light-theme{
     column-gap: 5rem;
   }
 
-  .nav__menu{ 
-    padding: 1rem 1.5rem; 
-  }
-
-  .nav{
-    justify-content: space-around;
-  }
-
-  .theme-button{
-    right: 2%;
-  }
-
-  .container {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
-  .home__handle{
-    margin-left: 0rem;
-    margin-right: 1rem;
-    justify-content: center;
-    text-align: center;
-}
-
-  .home__buttons{
-    flex-direction: column;
-  }
-
-  .home__social, .home__scroll{
-    bottom: 15rem;
-  }
-
-  .home__img{
-    width: 60%;
-  }
-
-  .about__info{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .about__data{
-    width: 95%;
-  }
-
-  .skills__container{
-    
-    margin: 0;
-
-  }
 }
 
