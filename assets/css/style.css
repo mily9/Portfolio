@@ -328,7 +328,7 @@ body.light-theme{
 }
 
 .home__img{
-  border-radius: 12rem 12rem 0 0;
+  border-radius: 12rem 0rem;
 }
 
 .home__handle{
@@ -1012,17 +1012,6 @@ overflow: hidden; */
     bottom: 15rem;
   }
 
-  .about__data{
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .about__info{
-
-  }
-  
-
-
   .home__img{
     width: 60%;
   }
@@ -1030,6 +1019,15 @@ overflow: hidden; */
   .about__info{
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .about__data{
+    width: 95%;
+  }
+
+  .about__description{
+
+  }
+
 
 }
 
