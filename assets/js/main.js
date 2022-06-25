@@ -145,7 +145,7 @@ function sendEmail(){
   Email.send({
     Host : "smtp.gmail.com",
     Username : "emiliaashraghi@gmail.com",
-    Password : "Amoamispapas9",
+    Password : "Nadimdemicorazon9",
     To : 'emiliaashraghi@gmail.com',
     From : document.getElementById("email").value,
     Subject : "New Contact Form From Portfolio",
