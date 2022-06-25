@@ -474,7 +474,7 @@
                 <div class="contact__content">
                   <h3 class="contact__title">Write me your project</h3>
 
-                  <form onsubmit="sendEmail()" method="POST">
+                  <form onsubmit="sendEmail(); reset(); return false;" method="POST">
                     <div class="contact__form-div">
                       <label for="" class="contact__form-tag">Names</label>
                       <input name="name" type="text" placeholder="Insert your name" required="required" class="contact__form-input" />
