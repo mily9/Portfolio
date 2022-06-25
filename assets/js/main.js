@@ -143,12 +143,12 @@ sr.reveal(`.home__social, .home__scroll`, {delay: 900, origin: 'bottom'})
 /*=============== FORM ===============*/
 function sendEmail(){
   Email.send({
-    Host : "smtp.yourisp.com",
-    Username : "username",
-    Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
+    Host : "smtp.gmail.com",
+    Username : "emiliaashraghi@gmail.com",
+    Password : "Amoamispapas9",
+    To : 'emiliaashraghi@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form From Portfolio",
     Body : "And this is the body"
   }).then(
     message => alert(message)
