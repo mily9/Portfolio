@@ -901,7 +901,7 @@ body.light-theme{
 
 /* ============= MEDIA QUERIES (SMALL DEVICES) ================= */
 /* For medium devices */
-@media screen and (max-width: 8200px){
+@media screen and (max-width: 820px){
   .about__description{
     width: 60%;
     padding: 0;
