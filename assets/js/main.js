@@ -141,16 +141,3 @@ sr.reveal(`.home__social, .home__scroll`, {delay: 900, origin: 'bottom'})
 
 
 /*=============== FORM ===============*/
-function sendEmail(){
-  Email.send({
-    Host : "smtp.gmail.com",
-    Username : "emiliaashraghi@gmail.com",
-    Password : "Nadimdemicorazon9",
-    To : 'emiliaashraghi@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New Contact Form From Portfolio",
-    Body : "And this is the body"
-  }).then(
-    message => alert(message)
-);
-}
