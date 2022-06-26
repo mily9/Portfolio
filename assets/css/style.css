@@ -1016,9 +1016,6 @@ body.light-theme{
     width: 60%;
   }
 
-  .home__container{
-    margin-left: 0;
-  }
 
   .about__info{
     grid-template-columns: repeat(2, 1fr);
