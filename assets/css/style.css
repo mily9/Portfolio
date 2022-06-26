@@ -1025,10 +1025,6 @@ body.light-theme{
     width: 95%;
   }
 
-  .skills__container{
-    margin: 0;
-  }
-
   .footer__list{
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
