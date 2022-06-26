@@ -474,7 +474,7 @@
                 <div class="contact__content">
                   <h3 class="contact__title">Write me your project</h3>
 
-                  <form class="contact_form" onsubmit="sendEmail(); reset(); return false;">
+                  <form action="https://formsubmit.co/emiliaashraghi@gmail.com" method="POST">
                     <div class="contact__form-div">
                       <label for="" class="contact__form-tag">Names</label>
                       <input name="name" type="text" id="name" placeholder="Insert your name" required="required" class="contact__form-input" />
@@ -557,31 +557,6 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
-
-        <!--=============== FORM ===============-->
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script>
-          const form = document.querySelector('.contact_form');
-          function sendMsg(e){
-            e.preventDefault();
-          
-                const name = document.getElementsByid('name'),
-                mail = document.getElementsByid('email'),
-                project = document.getElementsByid('project');
-
-                Email.send({
-                    SecureToken : "6b7f88dd-fec3-4f5a-b027-ef051ad65260",
-                    To : 'emiliaashraghi@gmail.com',
-                    From : email.value,
-                    Subject : "From Portfolio",
-                    Body : project.value
-                }).then(
-                  message => alert(message)
-                );
-            }
-
-            form.addEventListener('submit', sendMsg);
-        </script>
     </body>
 </html>
 
