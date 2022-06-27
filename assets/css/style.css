@@ -279,6 +279,103 @@ body.light-theme{
   border-radius: 5rem;
 }
 
+/*multilanguages*/
+
+/* .language{
+  position: relative;
+  width: 120px;
+  margin-left: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.language-selected{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.language-selected::before{
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(https://www.worldometers.info//img/flags/small/tn_do-flag.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px
+} */
+
+/* JQuery class */
+
+.loading-lang{
+  opacity: 0;
+}
+.loading-lang.show{
+  opacity: 1;
+}
+/* .language-selected.change-en::before{
+  background-image: url(https://www.worldometers.info//img/flags/small/tn_do-flag.gif);
+}
+.language-selected.change-fr::before{
+  background-image: url(https://www.worldometers.info//img/flags/small/tn_do-flag.gif);
+}
+.language-selected.change-en::before{
+  background-image: url(https://www.worldometers.info//img/flags/small/tn_do-flag.gif);
+}
+
+.language ul{
+  position: absolute;
+  width: 140px;
+  background-color:#fff;
+  border: 1px solid red;
+  padding-top: 10px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+  display: none;
+}
+
+.language ul li{
+  list-style: none;
+}
+
+.language ul li a{
+  display: block;
+  color: #252525;
+  padding-top: 5px 10px;
+}
+
+.language ul li:hover{
+  background-color: gray;
+}
+
+.language ul li a::before{
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 10px
+}
+
+a.en::before{
+  background-image: url(https://www.worldometers.info//img/flags/small/tn_do-flag.gif);
+}
+a.fr::before{
+  background-image: url(https://www.worldometers.info//img/flags/small/tn_do-flag.gif);
+}
+a.es::before{
+  background-image: url(https://www.worldometers.info//img/flags/small/tn_do-flag.gif);
+}
+
+.language:hover ul{
+  display: block;
+} */
+
+
+
 /* Active link */
 .active-link{
   background: linear-gradient(180deg,
@@ -753,6 +850,11 @@ body.light-theme{
   font-size: 2rem;
   color: var(--title-color);
   margin-bottom: .25rem;
+  transition: .4s;
+}
+
+.contact__card-icon:hover{
+  color: var(--first-color);
 }
 
 .contact__card-title,
@@ -839,6 +941,11 @@ body.light-theme{
 .footer__title,
 .footer__link{
   color: var(--body-color);
+  transition: .4s;
+}
+
+.footer__link:hover{
+  color: var(--first-color-alt);
 }
 
 .footer__title{
@@ -851,7 +958,7 @@ body.light-theme{
   grid-template-columns: repeat(6, 1fr);
   justify-content: center;
   column-gap: .5rem;
-  /* margin-bottom: 2rem; */
+  margin-bottom: 2rem;
   margin: 5% 15%;
 }
 

@@ -1,21 +1,21 @@
 <?php
-$nombre = $_POST['nombre'];
-$mail = $_POST['email'];
+  $API_KEY = 'MI_API_KEY';
+  $ip = $_SERVER['REMOTE_ADDR'];
+  $data = file_get_contents("http://api.ipinfodb.com/v3/ip-country/?key=$API_KEY&ip=$ip");
+  $arr_data = explode(';', $data);
+  $code = $arr_data[3];
 
-$header = 'From: ' . $mail . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
+  $countries_es = array('ES', 'CO');
+  $countries_fr = array('FR');
 
-$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
-$mensaje .= "Su e-mail es: " . $mail . " \r\n";
-$mensaje .= "Mensaje: " . $_POST['project'] . " \r\n";
-$mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'emiliaashraghi@gmail.com';
-$asunto = 'Mensaje de mi sitio web';
+  if(in_array($code, $countries_es)){
+    $res = '0';
+  }elseif(in_array($code, $countries_fr)){
+    $res = '2';
+  }else{
+    $res = '1';
+  }
 
-mail($para, $asunto, utf8_decode($mensaje), $header);
-
-header("Location:index.html");
+  echo $res;
 ?>

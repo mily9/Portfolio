@@ -22,8 +22,15 @@
         <title> Webmilia </title>
     </head>
     <body>
+
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
+          <a href="#">English</a>
+          <a href="#" id="translate" data-text="English,Francés,Español" data-file="es,en,fr" data-index="1">English</a>
+          <span class="loading-lang">Cargando...</span>
+          <h1 data-lang="bienvenidos">Bienvenido</h1>
+          <p data-lang="hola">Hola Mundo</p>
+          
             <nav class="nav container">
               <a href="#home" class="nav__logo">Emilia</a>
               
@@ -45,19 +52,30 @@
                     </a>
                   </li>
                   <li class="nav__item">
-                    <a href="#work" class="nav__link">
+                    <a href="work" class="nav__link">
                       <i class='bx bx-briefcase'></box-icon></i>
                     </a>
                   </li>
                   <li class="nav__item">
                     <a href="#contact" class="nav__link">
-                      <i class='bx bx-message-square-detail'></i>
+                      <i class='bx bx-message'></box-icon></i>
                     </a>
                   </li>
                 </ul>
               </div>
               <!--=============== Theme change Button ===============-->
               <i class='bx bx-moon change-theme' id="theme-button"></i>
+              <!-- <a href="#" class="logo">Multi-Languages</a>
+              <div class="language">
+                <div class="language-selected">
+                  pt-BR
+                </div>
+                <ul>
+                  <li><a href="#" class="en">English</a></li>
+                  <li><a href="#" class="">French</a></li>
+                  <li><a href="#" class="es">Spanish</a></li>
+                </ul>
+              </div> -->
             </nav>
         </header>
 
@@ -310,7 +328,7 @@
 
                   <div class="services__card_middle">
                     <div class="responsive__content">
-                      <img src="assets/img/web.jpg" alt="" class="services__img" />
+                      <img src="assets/img/web.webp" alt="" class="services__img" />
                     </div>
                   </div>
                   
@@ -390,7 +408,7 @@
             </section>
 
             <!--=============== TESTIMONIALS ===============-->
-            <section class="testimonial section">
+            <section class="testimonial section" id="testimonial">
                 <span class="section__subtitle">My Clients say</span>
                 <h2 class="section__title">Testimonials</h2>
 
@@ -438,8 +456,8 @@
 
                   <div class="contact__info">
                     <div class="contact__card">
-                      <i class='bx bx-envelope contact__card-icon' ></i>
-                      <h3 class="contact__card-title">Email</h3>
+                      <a href="mailto:emiliaahraghi@gmail.com" target="_blank"><i class='bx bx-envelope contact__card-icon' ></i></a>
+                      <a href="mailto:emiliaahraghi@gmail.com" target="_blank"><h3 class="contact__card-title">Email</h3></a>
                       <span class="contact__card-data">emiliaahraghi@gmail.com</span>
 
                       <a href="mailto:emiliaahraghi@gmail.com" target="_blank" class="contact__button">
@@ -448,8 +466,8 @@
                     </div>
 
                     <div class="contact__card ">
-                      <i class='bx bxl-whatsapp contact__card-icon'></i>
-                      <h3 class="contact__card-title">Whatsapp</h3>
+                      <a href="https://api.whatsapp.com/send?phone=+18199433591&text=Hello, more information" target="_blank"> <i class='bx bxl-whatsapp contact__card-icon'></i></a>
+                      <a href="https://api.whatsapp.com/send?phone=+18199433591&text=Hello, more information" target="_blank"><h3 class="contact__card-title">Whatsapp</h3></a>
                       <span class="contact__card-data">18199433591</span>
 
                       <a href="https://api.whatsapp.com/send?phone=+18199433591&text=Hello, more information" target="_blank" class="contact__button">
@@ -458,8 +476,8 @@
                     </div>
 
                     <div class="contact__card">
-                      <i class='bx bxl-messenger contact__card-icon' ></i>
-                      <h3 class="contact__card-title">Messenger</h3>
+                      <a href="https://m.me/mily.ashraghi" target="_blank"></a><i class='bx bxl-messenger contact__card-icon' ></i></a>
+                      <a href="https://m.me/mily.ashraghi" target="_blank"><h3 class="contact__card-title">Messenger</h3></a>
                       <span class="contact__card-data">user.f123</span>
 
                       <a href="https://m.me/mily.ashraghi" target="_blank" class="contact__button">
@@ -509,13 +527,13 @@
                 <a href="#about" class="footer__link">About</a>
               </li>
               <li>
-                <a href="#experience" class="footer__link">Experience</a>
+                <a href="#skills" class="footer__link">Experience</a>
               </li>
               <li>
-                <a href="#portfolio" class="footer__link">Portfolio</a>
+                <a href="#work" class="footer__link">Portfolio</a>
               </li>
               <li>
-                <a href="#testimonials" class="footer__link">Testimonials</a>
+                <a href="#testimonial" class="footer__link">Testimonials</a>
               </li>
               <li>
                 <a href="#contact" class="footer__link">Contact</a>
@@ -551,6 +569,7 @@
         <script src="./assets/js/mixitup.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>
