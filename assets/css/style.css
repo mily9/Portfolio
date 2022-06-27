@@ -1028,6 +1028,10 @@ body.light-theme{
     width: 60%;
   }
 
+  .skills__content{
+    margin-left: 0%;
+    margin-right: 5%;
+  }
 
   .about__info{
     grid-template-columns: repeat(2, 1fr);
