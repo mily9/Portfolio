@@ -402,6 +402,7 @@ body.light-theme{
   transform: rotate(-90deg);
 }
 
+  
 /*=============== BUTTONS ===============*/
 .button{
   display: inline-block;
@@ -904,6 +905,12 @@ body.light-theme{
 /* ============= MEDIA QUERIES (SMALL DEVICES) ================= */
 /* For medium devices */
 @media screen and (max-width: 820px){
+  
+  .nav__menu{
+    width: 60%;
+    margin-left: 10%;
+  }
+  
   .about__description{
     width: 60%;
     padding: 0;
@@ -938,6 +945,11 @@ body.light-theme{
 
 /* For small devices */
 @media screen and (max-width: 450px){
+  .nav__menu{
+    width: 80%;
+    margin-left: 0%;
+  }
+
   .about .skills .services{
     margin-top: -20%;
   }
