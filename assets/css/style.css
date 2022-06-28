@@ -1125,5 +1125,10 @@ body.light-theme{
     row-gap: 1rem;
     column-gap: 2rem;
   }
+
+  .float{
+    bottom:80px;
+    right: 10px;
+  }
 }
 
