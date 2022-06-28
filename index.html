@@ -25,12 +25,6 @@
 
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
-          <a href="#">English</a>
-          <a href="#" id="translate" data-text="English,Francés,Español" data-file="es,en,fr" data-index="1">English</a>
-          <span class="loading-lang">Cargando...</span>
-          <h1 data-lang="bienvenidos">Bienvenido</h1>
-          <p data-lang="hola">Hola Mundo</p>
-          
             <nav class="nav container">
               <a href="#home" class="nav__logo">Emilia</a>
               
@@ -65,17 +59,11 @@
               </div>
               <!--=============== Theme change Button ===============-->
               <i class='bx bx-moon change-theme' id="theme-button"></i>
-              <!-- <a href="#" class="logo">Multi-Languages</a>
-              <div class="language">
-                <div class="language-selected">
-                  pt-BR
-                </div>
-                <ul>
-                  <li><a href="#" class="en">English</a></li>
-                  <li><a href="#" class="">French</a></li>
-                  <li><a href="#" class="es">Spanish</a></li>
-                </ul>
-              </div> -->
+              <div class="languageContainer">
+                <div id="eng" class="languages british"><a></a></div>
+                <div id="esp" class="languages spain"><p></p></div>
+                <div id="fr" class="languages french"><p></p></div>
+             </div>
             </nav>
         </header>
 
@@ -85,13 +73,22 @@
             <section class="home section" id="home">
                 <div class="home__container container grid">
                   <div class="home__data">
-                    <span class="home__greeting">Hello, I'm</span>
+                    <span id="eng" class="home__greeting eng" lang="en">Hello, I'm</span>
+                    <span id="esp" class="home__greeting esp" lang="es">Hola, soy</span>
+                    <span id="fr" class="home__greeting fr" lang="fr">Salut, je suis</span>
+
+                    
                     <h1 class="home__name">Emilia Ashraghi</h1>
                     <div class="wrapper">
-                      <h3 class="home__education">Web Developer</h3>
+                      <h3 id="eng" class="home__education eng" lang="en">Web Developer</h3>
+                      <h3 id="esp" class="home__education esp" lang="es">Desarrolladora web</h3>
+                      <h3 id="fr" class="home__education fr" lang="fr">Développeur web</h3>
+
                     </div>
                     <div class="home__buttons">
-                      <a href="#about" class="button">About me</a>
+                      <a href="#about" id="eng" class="button eng" lang="en">About me</a>
+                      <a href="#about" id="esp" class="button esp" lang="es">Acerca de mí</a>
+                      <a href="#about" id="fr" class="button fr" lang="fr">À propos de moi</a>
                     </div>
                   </div>
 
@@ -119,8 +116,13 @@
             
             <!--=============== ABOUT ===============-->
             <section class="about section" id="about">
-                 <span class="section__subtitle">My Intro</span>
-                 <h2 class="section__title">About Me</h2>
+                 <span id="eng" class="section__subtitle eng" lang="eng">My Intro</span>
+                 <span id="esp" class="section__subtitle esp" lang="es">Mi introducción</span>
+                 <span id="fr" class="section__subtitle fr" lang="fr">Mon Intro</span>
+                 
+                 <h2 class="section__title eng" lang="eng">About Me</h2>
+                 <h2 id="esp" class="section__title esp" lang="es">Acerca de mí</h2>
+                 <h2 id="fr" class="section__title fr" lang="fr">À propos de moi</h2>
 
                  <div class="about__container container grid">
                    <!-- <img src="assets/img/em.jpg" alt="" class="about__img" /> -->
@@ -130,46 +132,102 @@
                       <div class="about__info">
                           <div class="about__box">
                             <i class='bx bx-award about__icon' ></i>
-                            <h3 class="about__title">Experience</h3>
-                            <span class="about__subtitle">+1 year</span>
+                            <h3 id="eng" class="about__title eng" lang="en">Experience</h3>
+                            <h3 id="esp" class="about__title esp" lang="es">Experiencia</h3>
+                            <h3 id="fr" class="about__title fr" lang="fr">Mon expérience</h3>
+
+                            <span id="eng" class="about__subtitle eng" lang="en">+1 year</span>
+                            <span id="esp" class="about__subtitle esp" lang="es">+1 año</span>
+                            <span id="fr" class="about__subtitle fr" lang="fr">+1 an</span>
+
                           </div>
 
                           <div class="about__box">
                             <i class='bx bx-award about__icon' ></i>
-                            <h3 class="about__title">Completed</h3>
-                            <span class="about__subtitle">3 projects</span>
+                            <h3 id="eng" class="about__title eng" lang="en">Completed</h3>
+                            <h3 id="esp" class="about__title esp" lang="es">Completado</h3>
+                            <h3 id="fr" class="about__title fr" lang="fr">Complété</h3>
+
+                            <span id="eng" class="about__subtitle eng" lang="en">3 projects</span>
+                            <span id="esp" class="about__subtitle esp" lang="es">3 proyectos</span>
+                            <span id="fr" class="about__subtitle fr" lang="fr">3 projets</span>
                           </div>
 
                           <div class="about__box">
                             <i class='bx bx-support about__icon'></i>
-                            <h3 class="about__title">Support</h3>
-                            <span class="about__subtitle">Online</span>
+                            <h3 id="eng" class="about__title eng" lang="en">Support</h3>
+                            <h3 id="esp" class="about__title esp" lang="es">Soporte</h3>
+                            <h3 id="fr" class="about__title fr" lang="fr">Support</h3>
+
+                            <span id="eng" class="about__subtitle eng" lang="en">online</span>
+                            <span id="esp" class="about__subtitle esp" lang="esp">en línea</span>
+                            <span id="fr" class="about__subtitle fr" lang="fr">en ligne</span>
                           </div>
                         </div>
-                        <p class="about__description">
+                        <p id="eng" class="about__description eng" lang="en">
                           
                           I’m a Web Developer located in Canada. I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences. <br /><br />
-
+  
                           Well-organised person, problem solver, independent employee with high attention to detail. Fan outdoor activities and TV series.. A family person and mother of one boy. <br /><br />
 
                           Interested in the entire frontend spectrum and working on ambitious projects.<br /><br />
-                          <a href="#contact" class="skills__title">Let's make something special!</a>
+
+                          <p id="esp" class="about__description esp" lang="es">
+                          
+                            Soy una desarrolladora web que vive en Canadá. Tengo una gran pasión por los efectos de interfaz de usuario, las animaciones y la creación de experiencias de usuario intuitivas y dinámicas. <br /><br />
+
+                            Soy una persona muy organizada, busco solucionar problemas, trabajadora independiente con gran atención a los detalles. Fan de las actividades al aire libre y de las series de televisión.. Una persona familiar y madre de un hermoso niño. <br /><br />
+
+                            Interesada en todo el espectro frontend y trabajando en proyectos ambiciosos.<br /><br />
+
+                            
+                          <p id="fr" class="about__description fr" lang="fr">
+                          
+                            Je suis un développeuse Web situé au Canada. J'ai une véritable passion pour les effets d'interface utilisateur, les animations et la création d'expériences utilisateur intuitives et dynamiques. <br /><br />
+
+                            Je suis une ersonne bien organisée, résolveur de problèmes, employé indépendant avec une grande attention aux détails. Fan d'activités de plein air et de séries télévisées. Personne de famille et mère d'un beau garçon. <br /><br />
+
+                            Intéressé par l'ensemble du spectre frontend et travaillant sur des projets ambitieux.<br /><br />
+
+                          <!-- <a href="#contact" id="eng" class="skills__title eng" lang="en">Let's make something special!</a>
+                          <a href="#contact" id="esp" class="skills__title esp" lang="es">¡Creemos algo especial para ti!</a> -->
+                          <a href="#contact" id="esp" class="skills__title esp" lang="esp">Faisons quelque chose de spécial!</a>
+                          <a href="#contact" id="fr" class="skills__title fr" lang="fr">Faisons quelque chose de spécial!</a>
+                          <!-- <a href="#contact" id="fr" class="skills__title fr" lang="fr">Faisons quelque chose de spécial!</a> -->
+
+
                           
                         </p>
-                        <a href="#contact" class="button">Contact Me</a>
+                        <div class="home__buttons">
+                          <a href="#contact" id="eng" class="button eng" lang="en">Contact Me</a>
+                          <a href="#contact" id="esp" class="button esp" lang="es">Contact Me</a>
+                          <a href="#contact" id="fr" class="button fr" lang="fr">Contact Me</a> 
+                      </div>
                     </div>
                 </div>
             </section>
 
             <!--=============== SKILLS ===============-->
             <section class="skills section" id="skills">
-              <span class="section__subtitle">My abilities</span>
-              <h2 class="section__title">My Experience</h2>  
+              <span id="eng" class="section__subtitle eng" lang="en">My abilities</span>
+              <span id="esp" class="section__subtitle esp" lang="es">Mis habilidades</span>
+              <span id="fr" class="section__subtitle fr" lang="fr">Mes habilités</span>
+              
+              <h2 class="section__title eng" lang="eng">My Experience</h2>
+              <h2 id="esp" class="section__title esp" lang="es">Mi experiencia</h2>
+              <h2 id="fr" class="section__title fr" lang="fr">Mon expérience</h2>
               
               <div class="skills__container container grid">
                 <div class="skills__content">
-                  <h3 class="skills__title">My Toolbox & Things I Can Do</h3>
-                  <h4 class="skills__title1"> The skills, tools and technologies I use to bring your products to life:</h4>
+                  <h3 id="eng" class="skills__title eng" lang="en">My Toolbox & Things I Can Do</h3>
+                  <h3 id="esp" class="skills__title esp" lang="es">Mi caja de herramientas y cosas que puedo hacer</h3>
+                  <h3 id="fr" class="skills__title fr" lang="fr">Ma boîte à outils et les choses que je peux faire</h3>
+
+
+                  <h4 id="eng" class="skills__title1 eng" lang="en"> The skills, tools and technologies I use to bring your products to life:</h4>
+                  <h4 id="esp" class="skills__title1 esp" lang="es"> Las habilidades, herramientas y tecnologías que utilizo para dar vida a sus proyectos: </h4>
+                  <h4 id="fr" class="skills__title1 fr" lang="fr"> Les compétences, outils et technologies que j'utilise pour donner vie à vos projets :</h4>
+
                   <br />
 
                   
@@ -292,8 +350,13 @@
 
             <!--=============== SERVICES ===============-->
             <section class="services section">
-                <span class="section__subtitle">My Services</span>
-                <h2 class="section__title">What I Offer</h2>
+              <span id="eng" class="section__subtitle eng" lang="en">My Services</span>
+              <span id="esp" class="section__subtitle esp" lang="es">Mis servicios</span>
+              <span id="fr" class="section__subtitle fr" lang="fr">Mes services</span>
+              
+              <h2 class="section__title eng" lang="eng">What I Offer</h2>
+              <h2 id="esp" class="section__title esp" lang="es">Lo que ofrezco</h2>
+              <h2 id="fr" class="section__title fr" lang="fr">Ce que j'offre</h2>
 
                 <div class="services__container container grid">
                   <div class="services__card_left">
@@ -301,16 +364,28 @@
                     <div class="services__data_left">
 
                       <div>
-                        <h3 class="services__name">Web Project Management</h3>
-                        <span class="services__level">Showcase, corporate, event site, e-commerce.</span>
+                        <h3 id="eng" class="services__name eng" lang="en">Web Project Management</h3>
+                        <h3 id="esp" class="services__name esp" lang="es">Gestión de proyectos web</h3>
+                        <h3 id="fr" class="services__name fr" lang="fr">Gestion de projet Web</h3>
+
+                        <span id="eng" class="services__level eng" lang="en">Showcase, corporate, event site, e-commerce.</span>
+                        <span id="esp" class="services__level esp" lang="es">Sitio de exhibición, corporativo, sitio de eventos, e-commerce.</span>
+                        <span id="fr" class="services__level fr" lang="fr">Des intégrations HTML - CSS - JavaScript aux standards du web.</span>
+
                       </div>
                       <i class='bx bx-desktop icon'></i>
                     </div>
 
                     <div class="services__data_left">
                       <div>
-                        <h3 class="services__name">WEeb Integration</h3>
-                        <span class="services__level">HTML - CSS - JavaScript integrations compliance with web standards.</span>
+                        <h3 id="eng" class="services__name eng" lang="en">Web Integration</h3>
+                        <h3 id="esp" class="services__name esp" lang="es">Integración web</h3>
+                        <h3 id="fr" class="services__name fr" lang="fr">Intégration WEB</h3>
+
+                        <span id="eng" class="services__level eng" lang="en">HTML - CSS - JavaScript integrations compliance with web standards.</span>
+                        <span id="esp" class="services__level esp" lang="es">Integraciones HTML - CSS - JavaScript de conformidad con los estándares web.</span>
+                        <span id="fr" class="services__level fr" lang="fr">Intégrations HTML - CSS - JavaScript dans le respect des standards du web.</span>
+
                       </div>
                       <i class='bx bxs-file-html icon'></i>
                     </div>
@@ -319,8 +394,15 @@
                     <div class="services__data_left">
 
                       <div>
-                        <h3 class="services__name">Specific Developments</h3>
-                        <span class="services__level"> Web tools adapted to your core business & solutions.</span>
+                        <h3 id="eng" class="services__name eng" lang="en">Specific Developments</h3>
+                        <h3 id="esp" class="services__name esp" lang="es">Desarrollos Específicos</h3>
+                        <h3 id="fr" class="services__name fr" lang="fr">Développements spécifiques</h3>
+
+                        <span id="eng" class="services__level eng" lang="en">Web tools adapted to your core business & solutions.</span>
+                        <span id="esp" class="services__level esp" lang="es">Herramientas web adaptadas a su negocio y soluciones.</span>
+                        <span id="fr" class="services__level fr" lang="fr">Des outils web adaptés à votre entreprise et à vos solutions.</span>
+
+
                       </div>
                       <i class='bx bx-key icon'></i>
                     </div>
@@ -339,8 +421,13 @@
                       <i class='bx bx-layout icon'></i>
                       
                       <div>
-                        <h3 class="services__name">Page Dynammism</h3>
-                        <span class="services__level">Non-intrusive content animations to enhance your project.</span>
+                        <h3 id="eng" class="services__name eng" lang="en">Dynamic web sites</h3>
+                        <h3 id="esp" class="services__name esp" lang="es">Sitios web dinámicos</h3>
+                        <h3 id="fr" class="services__name fr" lang="fr">Sites web dynamiques</h3>
+
+                        <span id="eng" class="services__level eng" lang="en">Non-intrusive content animations to enhance your project.</span>
+                        <span id="esp" class="services__level esp" lang="es">Animaciones de contenido no intrusivas para mejorar su proyecto.</span>
+                        <span id="fr" class="services__level fr" lang="fr">Des animations de contenu non intrusives pour valoriser votre projet.</span>
                       </div>
                     </div>
 
@@ -348,8 +435,14 @@
                       <i class='bx bxs-devices icon'></i>
                       
                       <div>
-                        <h3 class="services__name">Responsive Design</h3>
-                        <span class="services__level">Compatible with all media, tablet & mobile application.</span>
+                        <h3 id="eng" class="services__name eng" lang="en">Responsive Design</h3>
+                        <h3 id="esp" class="services__name esp" lang="es">Diseño web adaptable</h3>
+                        <h3 id="fr" class="services__name fr" lang="fr">Sites web dynamiques</h3>
+
+                        <span id="eng" class="services__level eng" lang="en">Compatible with all media, tablet & mobile application.</span>
+                        <span id="esp" class="services__level esp" lang="es">Sitios web compatibles con diferentes anchos de pantalla: teléfonos, tabletas, computadoras</span>
+                        <span id="fr" class="services__level fr" lang="fr">Sites Web compatibles avec différentes largeurs d'écran: téléphones, tablettes, ordinateurs</span>
+
                       </div>
                     </div>
 
@@ -357,7 +450,9 @@
                       <i class='bx bx-edit icon'></i>
                       
                       <div>
-                        <h3 class="services__name">Implementation - Modification - CMS Management</h3>
+                        <h3 id="eng" class="services__name eng" lang="en">Implementation - Modification - CMS Management</h3>
+                        <h3 id="esp" class="services__name esp" lang="es">Implementación - Modificación - Gestión CMS</h3>
+                        <h3 id="fr" class="services__name fr" lang="fr">Implémentation - Modification - Gestion CMS</h3>
                         <span class="services__level">Wordpress</span>
                       </div>
                     </div>
@@ -368,13 +463,24 @@
 
             <!--=============== WORK ===============-->
             <section class="work section" id="work">
-                <span class="section__subtitle">My Portfolio</span>
-                <h2 class="section__title">Recent Works</h2>
+                <span id="eng" class="section__subtitle eng" lang="en">My Portfolio</span>
+                <span id="esp" class="section__subtitle esp" lang="es">Mi portafolio</span>
+                <span id="fr" class="section__subtitle fr" lang="fr">Mon portfolio</span>
+
+                <h2 id="eng" class="section__title eng" lang="en">Recent Works</h2>
+                <h2 id="esp" class="section__title esp" lang="es">Trabajos recientes</h2>
+                <h2 id="fr" class="section__title fr" lang="fr">Travaux récents</h2>
 
                 <div class="work__filters">
-                  <span class="work__item active-work" data-filter="all">All</span>
+                  <span id="eng" class="work__item active-work eng" lang="en" data-filter="all">All</span>
+                  <span id="esp" class="work__item active-work esp" lang="es" data-filter="all">Todos</span>
+                  <span id="fr" class="work__item active-work fr" lang="fr" data-filter="all">Tous</span>
+
                   <span class="work__item" data-filter=".web">Web</span>
-                  <span class="work__item" data-filter=".projects">Projects</span>
+
+                  <span id="eng" class="work__item eng" lang="en" data-filter="all">Projects</span>
+                  <span id="esp" class="work__item esp" lang="es" data-filter="all">Proyectos</span>
+                  <span id="fr" class="work__item fr" lang="fr" data-filter="all">Projets</span>
                 </div>
 
                 <div class="work__container container grid">
@@ -382,8 +488,14 @@
                     <img src="./assets/img/inveligent1.PNG" alt="" class="work__img" />
                     <h3 class="work__title">Web</h3>
 
-                    <a href="https://www.inveligent.com/" class="work__button" target="_blank">
+                    <a id="eng" href="https://www.inveligent.com/" class="work__button eng" lang="en" target="_blank">
+                      Visit the site <i class='bx bx-right-arrow-alt work__icon' ></i>
+                    </a>
+                    <a id="esp" href="https://www.inveligent.com/" class="work__button esp" lang="es" target="_blank">
                       Visitar el sitio <i class='bx bx-right-arrow-alt work__icon' ></i>
+                    </a>
+                    <a id="fr" href="https://www.inveligent.com/" class="work__button fr" lang="fr" target="_blank">
+                      Visiter le site <i class='bx bx-right-arrow-alt work__icon' ></i>
                     </a>
                   </div>
 
@@ -391,8 +503,14 @@
                     <img src="./assets/img/robofriends.PNG" alt="" class="work__img" />
                     <h3 class="work__title">React project</h3>
 
-                    <a href="https://mily9.github.io/robofriends/" class="work__button" target="_blank"> 
-                      Visitar el sitio <i class='bx bx-right-arrow-alt work__icon' ></i>
+                    <a id="eng" href="https://mily9.github.io/robofriends/"  class="work__button eng" lang="en" target="_blank">
+                      Visit the project <i class='bx bx-right-arrow-alt work__icon' ></i>
+                    </a>
+                    <a id="esp" href="https://mily9.github.io/robofriends/"  class="work__button esp" lang="es" target="_blank">
+                      Visitar el proyecto <i class='bx bx-right-arrow-alt work__icon' ></i>
+                    </a>
+                    <a id="fr" href="https://mily9.github.io/robofriends/"  class="work__button fr" lang="fr" target="_blank">
+                      Visiter le projet <i class='bx bx-right-arrow-alt work__icon' ></i>
                     </a>
                   </div>
 
@@ -409,8 +527,13 @@
 
             <!--=============== TESTIMONIALS ===============-->
             <section class="testimonial section" id="testimonial">
-                <span class="section__subtitle">My Clients say</span>
-                <h2 class="section__title">Testimonials</h2>
+                <span id="eng" class="section__subtitle eng" lang="en">My Clients say</span>
+                <span id="esp" class="section__subtitle esp" lang="es">Mis clientes dicen</span>
+                <span id="fr" class="section__subtitle fr" lang="fr">Mes clients disent</span>
+
+                <h2 id="eng" class="section__title eng" lang="en">Testimonials</h2>
+                <h2 id="esp" class="section__title esp" lang="es">Testimonios</h2>
+                <h2 id="fr" class="section__title fr" lang="fr">Témoignages</h2>
 
                 <div class="testimonial__container container swiper">
                   <div class="swiper-wrapper">
@@ -418,8 +541,14 @@
                       <img src="assets/img/tatin.PNG" class="testimonial__img"/>
 
                       <h3 class="testimonial__name">Farzin Ashraghi</h3>
-                      <p class="testimonial__description">
+                      <p id="eng" class="testimonial__description eng" lang="en">
                         A really good job, all aspects of the project were followed step by step and with good results.
+                      </p>
+                      <p id="esp" class="testimonial__description esp" lang="es">
+                        Un muy buen trabajo, todos los aspectos del proyecto fueron seguidos paso a paso y con buenos resultados.
+                      </p>
+                      <p id="fr" class="testimonial__description fr" lang="fr">
+                        Un très bon travail, tous les aspects du projet ont été suivis étape par étape et avec de bons résultats.
                       </p>
                     </div>
 
@@ -447,12 +576,18 @@
 
             <!--=============== CONTACT ===============-->
             <section class="contact section" id="contact">
-              <span class="section__subtitle">Get in touch</span>
-              <h2 class="section__title">Contact Me</h2>
+              <span id="eng" class="section__subtitle eng" lang="en">Get in touch</span>
+              <span id="esp" class="section__subtitle esp" lang="es">Escribe tu proyecto</span>
+              <span id="fr" class="section__subtitle fr" lang="fr">Rédigez votre projet</span>
+              <h2 id="eng" class="section__title eng" lang="en">Contact Me</h2>
+              <h2 id="esp" class="section__title esp" lang="es">Contáctame</h2>
+              <h2 id="fr" class="section__title fr" lang="fr">Contactez moi</h2>
 
               <div class="contact__container container grid">
                 <div class="contact__content">
-                  <h3 class="contact__title">Talk to me</h3>
+                  <h3 id="eng" class="contact__title eng" lang="en">Talk to me</h3>
+                  <h3 id="esp" class="contact__title esp" lang="es">Háblame</h3>
+                  <h3 id="fr" class="contact__title fr" lang="fr">Parle-moi</h3>
 
                   <div class="contact__info">
                     <div class="contact__card">
@@ -460,8 +595,14 @@
                       <a href="mailto:emiliaahraghi@gmail.com" target="_blank"><h3 class="contact__card-title">Email</h3></a>
                       <span class="contact__card-data">emiliaahraghi@gmail.com</span>
 
-                      <a href="mailto:emiliaahraghi@gmail.com" target="_blank" class="contact__button">
+                      <a id="eng" href="mailto:emiliaahraghi@gmail.com" target="_blank" class="contact__button eng" lang="en">
                         Write Me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                      </a>
+                      <a id="esp" href="mailto:emiliaahraghi@gmail.com" target="_blank" class="contact__button esp" lang="es">
+                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                      </a>
+                      <a id="fr" href="mailto:emiliaahraghi@gmail.com" target="_blank" class="contact__button fr" lang="fr">
+                        Écris moi <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
                       </a>
                     </div>
 
@@ -470,8 +611,14 @@
                       <a href="https://api.whatsapp.com/send?phone=+18199433591&text=Hello, more information" target="_blank"><h3 class="contact__card-title">Whatsapp</h3></a>
                       <span class="contact__card-data">18199433591</span>
 
-                      <a href="https://api.whatsapp.com/send?phone=+18199433591&text=Hello, more information" target="_blank" class="contact__button">
+                      <a id="eng" href="https://api.whatsapp.com/send?phone=+18199433591&text=Hello, more information" target="_blank" class="contact__button eng" lang="en">
                         Write Me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                      </a>
+                      <a id="esp" href="https://api.whatsapp.com/send?phone=+18199433591&text=Hello, more information" target="_blank" class="contact__button esp" lang="es">
+                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                      </a>
+                      <a id="fr" href="https://api.whatsapp.com/send?phone=+18199433591&text=Hello, more information" target="_blank" class="contact__button fr" lang="fr">
+                        Écris moi <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
                       </a>
                     </div>
 
@@ -479,9 +626,15 @@
                       <a href="https://m.me/mily.ashraghi" target="_blank"></a><i class='bx bxl-messenger contact__card-icon' ></i></a>
                       <a href="https://m.me/mily.ashraghi" target="_blank"><h3 class="contact__card-title">Messenger</h3></a>
                       <span class="contact__card-data">user.f123</span>
-
-                      <a href="https://m.me/mily.ashraghi" target="_blank" class="contact__button">
+                      
+                      <a id="eng" href="https://m.me/mily.ashraghi" target="_blank" class="contact__button eng" lang="en">
                         Write Me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                      </a>
+                      <a id="esp" href="https://m.me/mily.ashraghi" target="_blank" class="contact__button esp" lang="es">
+                        Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                      </a>
+                      <a id="fr" href="https://m.me/mily.ashraghi" target="_blank" class="contact__button fr" lang="fr">
+                        Écris moi <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
                       </a>
                     </div>
                   </div>
@@ -492,8 +645,13 @@
 
                   <form action="https://formsubmit.co/cfcbd332d6a25fb817abdc86ef2e5b98" method="POST">
                     <div class="contact__form-div">
-                      <label for="" class="contact__form-tag">Names</label>
-                      <input name="name" type="text" id="name" placeholder="Insert your name" required="required" class="contact__form-input" />
+                      <label id="eng" for="" class="contact__form-tag eng" lang="en">Names</label>
+                      <label id="esp" for="" class="contact__form-tag esp" lang="es">Nombres</label>
+                      <label id="fr" for="" class="contact__form-tag fr" lang="fr">Nom</label>
+
+                      <input id="eng" name="name" type="text" id="name" placeholder="Insert your name" required="required" class="contact__form-input eng" lang="en"/>
+                      <input id="esp" name="name" type="text" id="name" placeholder="Escribe tu nombre" required="required" class="contact__form-input esp" lang="es"/>
+                      <input id="fr" name="name" type="text" id="name" placeholder="Insérez votre nom" required="required" class="contact__form-input fr" lang="fr"/>
                     </div>
 
                     <div class="contact__form-div">
@@ -502,11 +660,18 @@
                     </div>
 
                     <div class="contact__form-div contact__form-area">
-                      <label for="" class="contact__form-tag">Project</label>
-                      <textarea name="project" id="project" cols="30" rows="10" placeholder="Write your project" required="required" class="contact__form-input"></textarea>
+                      <label id="eng" for="" class="contact__form-tag eng" lang="en">Project</label>
+                      <label id="esp" for="" class="contact__form-tag esp" lang="es">Proyecto</label>
+                      <label id="fr" for="" class="contact__form-tag fr" lang="fr">Projet</label>
+
+                      <textarea id="eng" name="project" id="project" cols="30" rows="10" placeholder="Write your project" required="required" class="contact__form-input eng" lang="en"></textarea>
+                      <textarea id="esp" name="project" id="project" cols="30" rows="10" placeholder="Escribe tu proyecto" required="required" class="contact__form-input esp" lang="es"></textarea>
+                      <textarea id="fr" name="project" id="project" cols="30" rows="10" placeholder="Rédigez votre projet" required="required" class="contact__form-input fr" lang="fr"></textarea>
                     </div>
 
-                    <button type='submit' class="button">Send Message</button>
+                    <button id="eng" type='submit' class="button eng" lang="en">Send Message</button>
+                    <button id="esp" type='submit' class="button esp" lang="es">Enviar mensaje</button>
+                    <button id="fr" type='submit' class="button fr" lang="fr">Envoyer le message</button>
                   </form>
 
                 </div>
@@ -521,10 +686,14 @@
 
             <ul class="footer__list">
               <li>
-                <a href="#home" class="footer__link">Home</a>
+                <a id="eng" href="#home" class="footer__link eng">Home</a>
+                <a id="esp" href="#home" class="footer__link esp">Inicio</a>
+                <a id="fr" href="#home" class="footer__link fr">Home</a>
               </li>
               <li>
-                <a href="#about" class="footer__link">About</a>
+                <a id="eng" href="#about" class="footer__link eng">About</a>
+                <a id="esp" href="#about" class="footer__link esp">Acerca de</a>
+                <a id="fr" href="#about" class="footer__link fr">À propos de</a>
               </li>
               <li>
                 <a href="#skills" class="footer__link">Experience</a>
@@ -553,8 +722,14 @@
 
             </ul>
 
-            <span class="footer__copy">
+            <span id="eng" class="footer__copy eng">
+              &#169; Emilia Ashraghi. All rights reserved.
+            </span>
+            <span id="esp" class="footer__copy esp">
               &#169; Emilia Ashraghi. Todos los derechos reservados.
+            </span>            
+            <span id="fr" class="footer__copy fr">
+              &#169; Emilia Ashraghi. Tous droits réservés.
             </span>
           </div>
         </footer>

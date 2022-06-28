@@ -281,6 +281,50 @@ body.light-theme{
 
 /*multilanguages*/
 
+.languageContainer {
+  display: flex;
+  justify-content: end;
+  overflow: visible;
+  height: 3rem;
+  font-size: small;
+}
+.languages {
+  display:flex;
+  align-items: center;
+  margin:.2rem;
+  padding: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+.languages::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.british::before{
+  background:url('../img/USA.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.spain::before{
+  background:url('../img/Spain.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.french::before{
+  background:url('../img/France.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.british{
+  padding: auto;
+}
+
+
 /* .language{
   position: relative;
   width: 120px;
@@ -308,13 +352,6 @@ body.light-theme{
 } */
 
 /* JQuery class */
-
-.loading-lang{
-  opacity: 0;
-}
-.loading-lang.show{
-  opacity: 1;
-}
 /* .language-selected.change-en::before{
   background-image: url(https://www.worldometers.info//img/flags/small/tn_do-flag.gif);
 }

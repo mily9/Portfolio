@@ -118,69 +118,218 @@ sr.reveal(`.home__social, .home__scroll`, {delay: 900, origin: 'bottom'})
 
 
 /*=============== MULTILANGUAGE ===============*/
-$(document).ready(function(){
-  var selector = '#translate';
-  $(selector).on('click', function(e){
-    e.preventDefault();
-    startLang( $(this) );
-  });
-  var startLang = function(el){
-    var el = $(el);
-    var text = el.attr('data-text');
-    var file = el.attr('data-file');
-    file = file.split(',');
-    text = text.split(',');
-    var index = el.attr('data-index');
-    if(index >= file.length){
-      index = 0;
-    }
-    changeName(el, text[index]);
-    changeIndex(el, index);
-    loadLang(file[index]);
-    $('html').attr('lang', file[index]);
-  };
 
-  var changeName = function(el, name){
-    $(el).html( name );
-  };
 
-  var changeIndex = function(el, index){
-    $(el).attr('data-index', ++index);
-  };
+const selectedEnglish = document.getElementById("eng");
+const selectedEspanol = document.getElementById("esp");
+const selectedFrench = document.getElementById("fr");
+const hidden = "display:none;";
+const shown = "display:block;";
 
-  var loadLang = function(lang){
-    var processLang = function(data){
-      var arr = data.split('\n');
-      for(var i in arr){
-        if( lineValid(arr[i]) ){
-          var obj = arr[i].split('=>');
-          assignText(obj[0], obj[1]);
-        }
-      }
-    };
-    var assignText = function(key, value){
-      $('[data-lang="'+key+'"]').each(function(){
-        var attr = $(this).attr('data-destine');
-        if(typeof attr !== 'undefined'){
-          $(this).attr(attr, value);
-        }else{
-          $(this).html(value);
-        }
-      });
-    };
-    var lineValid = function(line){
-      return (line.trim().length > 0);
-    };
-    $('.loading-lang').addClass('show');
-    $.ajax({
-      url: 'lang/'+lang+'.txt',
-      error:function(){
-        alert('No se cargó traducción');
-      },
-      success: function(data){
-        $('.loading-lang').removeClass('show');
-        processLang(data);
-      }
-    });
-  };  
+const allEnglishText = document.getElementsByClassName("eng");
+const allEspanolText = document.getElementsByClassName("esp");
+const allSlovakText = document.getElementsByClassName("fr");
+
+//SHOW ALL ENGLISH TEXT
+function showEnglishText() {
+  for (element in allEnglishText) {
+     allEnglishText[element].style = shown;
+  }
+  for (element in allEspanolText) {
+    allEspanolText[element].style = hidden;
+  }
+  for (element in allSlovakText) {
+    allSlovakText[element].style = hidden;
+  }
+}
+//SHOW ALL SPANISH TEXT
+function showSpanishText() {
+  for (element in allEnglishText) {
+    allEnglishText[element].style = hidden;
+  }
+  for (element in allEspanolText) {
+    allEspanolText[element].style = shown;
+  }
+  for (element in allSlovakText) {
+    allSlovakText[element].style = hidden;
+  }
+}
+//SHOW ALL SLOVAK TEXT
+function showSlovakText() {
+  for (element in allEnglishText) {
+    allEnglishText[element].style = hidden;
+  }
+  for (element in allEspanolText) {
+    allEspanolText[element].style = hidden;
+  }
+  for (element in allSlovakText) {
+    allSlovakText[element].style = shown;
+  }
+}
+
+//ENGLISH-> ALL OTHERS SWITCHED OFF
+selectedEnglish.addEventListener("click", () => {
+  selectedEnglish.classList.add("langSelected");
+  selectedEspanol.classList.remove("langSelected");
+  selectedFrench.classList.remove("langSelected");
+ 
+  showEnglishText();
 });
+
+//SPANISH-> ALL OTHERS SWITCHED OFF
+selectedEspanol.addEventListener("click", () => {
+  selectedEspanol.classList.add("langSelected");
+  selectedEnglish.classList.remove("langSelected");
+  selectedFrench.classList.remove("langSelected");
+ 
+  showSpanishText();
+});
+ 
+//SLOVAK-> ALL OTHERS SWITCHED OFF
+selectedFrench.addEventListener("click", () => {
+  selectedFrench.classList.add("langSelected");
+  selectedEspanol.classList.remove("langSelected");
+  selectedEnglish.classList.remove("langSelected");
+ 
+  showSlovakText();
+});
+
+//ENGLISH-> ALL OTHERS SWITCHED OFF
+selectedEnglish.addEventListener("click", () => {
+  selectedEnglish.classList.add("langSelected");
+  selectedEspanol.classList.remove("langSelected");
+  selectedFrench.classList.remove("langSelected");
+ 
+  showEnglishText();
+  localStorage.setItem("languageActive", "english");
+});
+ 
+//SPANISH-> ALL OTHERS SWITCHED OFF
+selectedEspanol.addEventListener("click", () => {
+  selectedEspanol.classList.add("langSelected");
+  selectedEnglish.classList.remove("langSelected");
+  selectedFrench.classList.remove("langSelected");
+ 
+  showSpanishText();
+  localStorage.setItem("languageActive", "espanol");
+});
+
+//SLOVAK-> ALL OTHERS SWITCHED OFF
+selectedFrench.addEventListener("click", () => {
+  selectedFrench.classList.add("langSelected");
+  selectedEspanol.classList.remove("langSelected");
+  selectedEnglish.classList.remove("langSelected");
+ 
+  showSlovakText();
+  localStorage.setItem("languageActive", "slovak");
+});
+
+//LOCAL STORAGE ADDON
+switch (localStorage.getItem("languageActive")) {
+ 
+  case "english":
+    selectedEnglish.classList.add("langSelected");
+    showEnglishText();
+    break;
+
+  case "espanol":
+    selectedEspanol.classList.add("langSelected");
+    showSpanishText();
+    break;
+
+  case "slovak":
+    selectedFrench.classList.add("langSelected");
+    //console.log("slovak on");
+    showSlovakText();
+    break;
+
+  default:
+    //default ENGLISH text shown, all others disabled
+//default -> no local storage exists
+    selectedEnglish.classList.add("langSelected");
+    showEnglishText();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $(document).ready(function(){
+//   var selector = '#translate';
+//   $(selector).on('click', function(e){
+//     e.preventDefault();
+//     startLang( $(this) );
+//   });
+//   var startLang = function(el){
+//     var el = $(el);
+//     var text = el.attr('data-text');
+//     var file = el.attr('data-file');
+//     file = file.split(',');
+//     text = text.split(',');
+//     var index = el.attr('data-index');
+//     if(index >= file.length){
+//       index = 0;
+//     }
+//     changeName(el, text[index]);
+//     changeIndex(el, index);
+//     loadLang(file[index]);
+//     $('html').attr('lang', file[index]);
+//   };
+
+//   var changeName = function(el, name){
+//     $(el).html( name );
+//   };
+
+//   var changeIndex = function(el, index){
+//     $(el).attr('data-index', ++index);
+//   };
+
+//   var loadLang = function(lang){
+//     var processLang = function(data){
+//       var arr = data.split('\n');
+//       for(var i in arr){
+//         if( lineValid(arr[i]) ){
+//           var obj = arr[i].split('=>');
+//           assignText(obj[0], obj[1]);
+//         }
+//       }
+//     };
+//     var assignText = function(key, value){
+//       $('[data-lang="'+key+'"]').each(function(){
+//         var attr = $(this).attr('data-destine');
+//         if(typeof attr !== 'undefined'){
+//           $(this).attr(attr, value);
+//         }else{
+//           $(this).html(value);
+//         }
+//       });
+//     };
+//     var lineValid = function(line){
+//       return (line.trim().length > 0);
+//     };
+//     $('.loading-lang').addClass('show');
+//     $.ajax({
+//       url: 'lang/'+lang+'.txt',
+//       error:function(){
+//         alert('No se cargó traducción');
+//       },
+//       success: function(data){
+//         $('.loading-lang').removeClass('show');
+//         processLang(data);
+//       }
+//     });
+//   };  
+// });
