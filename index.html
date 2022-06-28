@@ -168,7 +168,7 @@
                           
                           I’m a Web Developer located in Canada. I have a serious passion for UI effects, animations and creating intuitive, dynamic user experiences. <br /><br />
   
-                          Well-organised person, problem solver, independent employee with high attention to detail. Fan outdoor activities and TV series.. A family person and mother of one boy. <br /><br />
+                          Well-organised person, problem solver, independent employee with high attention to detail. Fan outdoor activities and TV series.. A family person and mother of a beautifull boy. <br /><br />
 
                           Interested in the entire frontend spectrum and working on ambitious projects.<br /><br />
 
@@ -183,16 +183,16 @@
                             
                           <p id="fr" class="about__description fr" lang="fr">
                           
-                            Je suis un développeuse Web situé au Canada. J'ai une véritable passion pour les effets d'interface utilisateur, les animations et la création d'expériences utilisateur intuitives et dynamiques. <br /><br />
+                            Je suis un développeuse Web situé au Québec-Canada. J'ai une véritable passion pour les effets d'interface utilisateur, les animations et la création d'expériences utilisateur intuitives et dynamiques. <br /><br />
 
-                            Je suis une ersonne bien organisée, résolveur de problèmes, employé indépendant avec une grande attention aux détails. Fan d'activités de plein air et de séries télévisées. Personne de famille et mère d'un beau garçon. <br /><br />
+                            Je suis une personne bien organisée, résolveur de problèmes, employé indépendant avec une grande attention aux détails. Fan d'activités de plein air et de séries télévisées. Personne de famille et mère d'un beau garçon. <br /><br />
 
                             Intéressé par l'ensemble du spectre frontend et travaillant sur des projets ambitieux.<br /><br />
 
                           <!-- <a href="#contact" id="eng" class="skills__title eng" lang="en">Let's make something special!</a>
                           <a href="#contact" id="esp" class="skills__title esp" lang="es">¡Creemos algo especial para ti!</a> -->
-                          <a href="#contact" id="esp" class="skills__title esp" lang="esp">Faisons quelque chose de spécial!</a>
-                          <a href="#contact" id="fr" class="skills__title fr" lang="fr">Faisons quelque chose de spécial!</a>
+                          <!-- <a href="#contact" id="esp" class="skills__title esp" lang="esp">¡Creemos algo especial para ti!</a> -->
+                          <a href="#contact" id="esp" class="skills__title esp" lang="fr">Faisons quelque chose de spécial!</a>
                           <!-- <a href="#contact" id="fr" class="skills__title fr" lang="fr">Faisons quelque chose de spécial!</a> -->
 
 
@@ -200,8 +200,8 @@
                         </p>
                         <div class="home__buttons">
                           <a href="#contact" id="eng" class="button eng" lang="en">Contact Me</a>
-                          <a href="#contact" id="esp" class="button esp" lang="es">Contact Me</a>
-                          <a href="#contact" id="fr" class="button fr" lang="fr">Contact Me</a> 
+                          <a href="#contact" id="esp" class="button esp" lang="es">Contáctame</a>
+                          <a href="#contact" id="fr" class="button fr" lang="fr">Contactez moi</a> 
                       </div>
                     </div>
                 </div>
@@ -478,9 +478,9 @@
 
                   <span class="work__item" data-filter=".web">Web</span>
 
-                  <span id="eng" class="work__item eng" lang="en" data-filter="all">Projects</span>
-                  <span id="esp" class="work__item esp" lang="es" data-filter="all">Proyectos</span>
-                  <span id="fr" class="work__item fr" lang="fr" data-filter="all">Projets</span>
+                  <span id="eng" class="work__item eng" lang="en" data-filter=".projects">Projects</span>
+                  <span id="esp" class="work__item esp" lang="es" data-filter=".projects">Proyectos</span>
+                  <span id="fr" class="work__item fr" lang="fr" data-filter=".projects">Projets</span>
                 </div>
 
                 <div class="work__container container grid">
@@ -641,7 +641,9 @@
                 </div>
 
                 <div class="contact__content">
-                  <h3 class="contact__title">Write me your project</h3>
+                  <h3 id="eng" class="contact__title eng">Write me your project</h3>
+                  <h3 id="esp" class="contact__title esp">Escríbeme tus ideas</h3>
+                  <h3 id="fr" class="contact__title fr">Écrit-moi ton projet</h3>
 
                   <form action="https://formsubmit.co/cfcbd332d6a25fb817abdc86ef2e5b98" method="POST">
                     <div class="contact__form-div">
@@ -649,9 +651,9 @@
                       <label id="esp" for="" class="contact__form-tag esp" lang="es">Nombres</label>
                       <label id="fr" for="" class="contact__form-tag fr" lang="fr">Nom</label>
 
-                      <input id="eng" name="name" type="text" id="name" placeholder="Insert your name" required="required" class="contact__form-input eng" lang="en"/>
-                      <input id="esp" name="name" type="text" id="name" placeholder="Escribe tu nombre" required="required" class="contact__form-input esp" lang="es"/>
-                      <input id="fr" name="name" type="text" id="name" placeholder="Insérez votre nom" required="required" class="contact__form-input fr" lang="fr"/>
+                      <input name="name" type="text" id="name" placeholder="Insert your name" required="required" class="contact__form-input" lang="en"/>
+                      <!-- <input id="esp" name="name" type="text" id="name" placeholder="Escribe tu nombre" required="required" class="contact__form-input esp" lang="es"/>
+                      <input id="fr" name="name" type="text" id="name" placeholder="Insérez votre nom" required="required" class="contact__form-input fr" lang="fr"/> -->
                     </div>
 
                     <div class="contact__form-div">
@@ -664,14 +666,14 @@
                       <label id="esp" for="" class="contact__form-tag esp" lang="es">Proyecto</label>
                       <label id="fr" for="" class="contact__form-tag fr" lang="fr">Projet</label>
 
-                      <textarea id="eng" name="project" id="project" cols="30" rows="10" placeholder="Write your project" required="required" class="contact__form-input eng" lang="en"></textarea>
-                      <textarea id="esp" name="project" id="project" cols="30" rows="10" placeholder="Escribe tu proyecto" required="required" class="contact__form-input esp" lang="es"></textarea>
-                      <textarea id="fr" name="project" id="project" cols="30" rows="10" placeholder="Rédigez votre projet" required="required" class="contact__form-input fr" lang="fr"></textarea>
+                      <textarea name="project" id="project" cols="30" rows="10" placeholder="Write your project" required="required" class="contact__form-input"></textarea>
+                      <!-- <textarea id="esp" name="project" id="project" cols="30" rows="10" placeholder="Escribe tu proyecto" required="required" class="contact__form-input esp" lang="es"></textarea>
+                      <textarea id="fr" name="project" id="project" cols="30" rows="10" placeholder="Rédigez votre projet" required="required" class="contact__form-input fr" lang="fr"></textarea> -->
                     </div>
 
-                    <button id="eng" type='submit' class="button eng" lang="en">Send Message</button>
-                    <button id="esp" type='submit' class="button esp" lang="es">Enviar mensaje</button>
-                    <button id="fr" type='submit' class="button fr" lang="fr">Envoyer le message</button>
+                    <button type='submit' class="button">Send Message</button>
+                    <!-- <button id="esp" type='submit' class="button esp" lang="es">Enviar mensaje</button>
+                    <button id="fr" type='submit' class="button fr" lang="fr">Envoyer le message</button> -->
                   </form>
 
                 </div>
