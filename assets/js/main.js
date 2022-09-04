@@ -32,7 +32,7 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
   loop: true,
   grabCursor: true,
   autoplay: {
-    delay: 3000,
+    delay: 5000,
     disableOnInteraction: false,
   },
 
@@ -43,10 +43,10 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 
   breakpoints: {
     576: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 48,
     },
   },
